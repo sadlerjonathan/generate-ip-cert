@@ -36,8 +36,8 @@ IP.1 = $IP
 
 # openssl req -x509 -nodes -days 730 -newkey rsa:2048 -keyout key.pem -out cert.pem -config san.cnf
 
-# openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config ./san.cnf
+openssl req -new -nodes -x509 -days 365 -keyout domain.key -out domain.crt -config san.cnf
 
-# openssl x509 -in domain.crt -noout -text
+openssl x509 -in domain.crt -noout -text
 
 
